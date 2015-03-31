@@ -15,6 +15,7 @@
 
 package 'httpd' do
   action :install
+  notifies node[:foo]
 end
 
 # Disable the default virtual host
